@@ -27,11 +27,11 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="**Please Join My Updates Channel to use this Bot!**",
+                    text="**මේ botව පාවිච්චි කරන්න ඔයා අපේ main channel join වෙන්න ඕනි. ඒ  සදහා පහල තියෙන button link එක click කරලා join වෙන්න. ඊට පස්සෙ 🔄 Try Again button එක click කරන්න.ඉන් පසුව ඔබට මේ botගෙන් අවශ්‍ය චිත්‍රපටය පහසුවෙන් ලබාගන්න පුලුවන් වේවි.!**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                                InlineKeyboardButton("Join our main Channel", url=invite_link.invite_link)
                             ],
                             [
                                 InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{file_id}")
@@ -67,7 +67,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                         InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('More Bots', url='https://t.me/subin_works/122')
+                        InlineKeyboardButton('Contact  us', url='https://t.me/Slofficialcontactbot')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -82,11 +82,11 @@ async def start(bot, cmd):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**මේ botව පාවිච්චි කරන්න ඔයා අපේ main channel join වෙන්න ඕනි. ඒ  සදහා පහල තියෙන button link එක click කරලා join වෙන්න. ඊට පස්සෙ 🔄 Try Again button එක click කරන්න.ඉන් පසුව ඔබට මේ botගෙන් අවශ්‍ය චිත්‍රපටය පහසුවෙන් ලබාගන්න පුලුවන් වේවි!**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                        InlineKeyboardButton(" Join our main Channel", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -100,7 +100,7 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Other Bots", url="https://t.me/subin_works/122")
+                        InlineKeyboardButton("Contact  us", url="https://t.me/Slofficialcontactbot")
                     ],
                     [
                         InlineKeyboardButton("About", callback_data="about")
@@ -192,8 +192,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/subin_works'),
-            InlineKeyboardButton('Source Code', url='https://github.com/subinps/Media-Search-bot')
+            InlineKeyboardButton('Main  Channel', url='https://t.me/slofficialmain'),
+            InlineKeyboardButton('Source Code', url='https://github.com/Sahanhishara500/slfilterbest')
         ]
         ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/subinps_bot'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\nUpdate Channel : <a href='https://t.me/subin_works'>XTZ Bots</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>Developer : <a href='https://t.me/slofficialmain'>slofficial</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/Sahanhishara500/slfilterbest'>Click here</a>\n  main Channel : <a href='https://t.me/slofficialmain'>slofficial</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
